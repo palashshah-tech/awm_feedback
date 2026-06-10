@@ -213,9 +213,52 @@ textarea::placeholder {
 .made-in{margin-top:80px;font-size:14px;color:rgba(255,255,255,0.7);font-weight:700;letter-spacing:0.5px}
 
 /* small screens */
-@media (max-width:720px){
-  .survey{padding:24px 18px;margin:24px}
-  .question{font-size:30px}
-  .question .qtext{font-size:20px}
-  .rating button{padding:18px 20px;min-width:56px}
+@media (max-width:768px){
+  .site-header { padding: 16px 20px; }
+  .site-header .logo { height: 32px; }
+  
+  .intro-inner h1 { font-size: 32px; }
+  .intro-inner .lead { font-size: 18px; }
+  
+  .question { 
+    margin-bottom: 24px !important; 
+    gap: 12px !important;
+  }
+  .question-number { 
+    width: 20px !important; 
+    height: 20px !important; 
+    min-width: 20px !important; 
+    font-size: 12px !important;
+    margin-top: 6px !important;
+  }
+  .question-text { font-size: 24px !important; }
+
+  .name-wrap input { font-size: 24px; }
+  
+  .options.rating { 
+    gap: 8px; 
+    justify-content: space-between;
+    width: 100%;
+  }
+  .rating button { 
+    width: 18%; 
+    min-width: 44px;
+    padding: 16px 0;
+    font-size: 16px;
+  }
+  .hint-row { max-width: 100%; }
+  .hint { font-size: 12px; }
+
+  .thanks-inner h1 { font-size: 24px; }
+  .thanks-inner .sub { font-size: 16px; }
 }
+
+@media (max-width: 480px) {
+  .intro-inner { padding: 40px 10px; }
+  .actions { 
+    flex-direction: column; 
+    width: 100%;
+  }
+  .actions button { width: 100%; }
+}
+
