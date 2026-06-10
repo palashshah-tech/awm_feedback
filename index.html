@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Attention & Working Memory — Feedback</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="survey">
+    <div class="stage intro" id="stage-intro">
+      <div class="intro-inner">
+        <h1>Thank you for helping us test the Attention &amp; Working Memory experience!</h1>
+        <p class="lead">Your feedback is valuable and helps us enhance our product and drive R&amp;D improvements.</p>
+        <p class="lead small">Please share your honest thoughts after exploring <a href="https://awmpublic.xiberlinc.one/" target="_blank" rel="noopener noreferrer">https://awmpublic.xiberlinc.one/</a>.</p>
+        <button class="start">start</button>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-name">
+      <h1 class="question"><span class="question-number">2</span><span class="question-text">Please enter your full name.</span></h1>
+      <div class="name-wrap">
+        <input type="text" placeholder="Type your answer here..." data-key="fullName" />
+      </div>
+      <div class="actions">
+        <button class="next">OK</button>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-purpose">
+      <h1 class="question"><span class="question-number">3</span><span class="question-text">How easy was it to understand the purpose of the Attention &amp; Working Memory site?</span></h1>
+      <div class="options rating" data-key="purpose">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+      </div>
+      <div class="hint-row"><div class="hint left">Very difficult</div><div class="hint right">Very easy</div></div>
+      <div class="actions">
+        <button class="prev">Back</button>
+        <button class="next">Next</button>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-design">
+      <h1 class="question"><span class="question-number">4</span><span class="question-text">How would you rate the interface and overall design of the site?</span></h1>
+      <div class="options rating" data-key="design">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+      </div>
+      <div class="hint-row"><div class="hint left">Poor</div><div class="hint right">Excellent</div></div>
+      <div class="actions">
+        <button class="prev">Back</button>
+        <button class="next">Next</button>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-4">
+      <h1 class="question"><span class="question-number">5</span><span class="question-text">How smooth did the experience feel as you used the site?</span></h1>
+      <div class="options rating" data-key="smoothness">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+      </div>
+      <div class="hint-row"><div class="hint left">Very rough</div><div class="hint right">Very smooth</div></div>
+      <div class="actions">
+        <button class="prev">Back</button>
+        <button class="next">Next</button>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-5">
+      <h1 class="question"><span class="question-number">6</span><span class="question-text">How responsive did the site feel during your use?</span></h1>
+      <div class="options rating" data-key="responsiveness">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+      </div>
+      <div class="hint-row"><div class="hint left">Very slow</div><div class="hint right">Very responsive</div></div>
+      <div class="actions">
+        <button class="prev">Back</button>
+        <button class="next">Next</button>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-6">
+      <h1 class="question"><span class="question-number">7</span><span class="question-text">How easy was the site to understand and navigate?</span></h1>
+      <div class="options rating" data-key="ease">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+      </div>
+      <div class="hint-row"><div class="hint left">Very difficult</div><div class="hint right">Very easy</div></div>
+      <div class="actions">
+        <button class="prev">Back</button>
+        <button class="next">Next</button>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-7">
+      <h1 class="question"><span class="question-number">8</span><span class="question-text">How useful or relevant did the experience feel to you?</span></h1>
+      <div class="options rating" data-key="usefulness">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+      </div>
+      <div class="hint-row"><div class="hint left">Not useful</div><div class="hint right">Very useful</div></div>
+      <div class="actions">
+        <button class="prev">Back</button>
+        <button class="next">Next</button>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-8">
+      <h1 class="question"><span class="question-number">9</span><span class="question-text">Please share any additional comments or feedback.</span></h1>
+      <textarea placeholder="Shift ⇧ + Enter ↵ to make a line break." data-key="comments"></textarea>
+      <div class="actions">
+        <button class="prev">Back</button>
+        <button class="submit">Submit</button>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-thanks">
+      <div class="thanks-inner">
+        <h1>Thank you for testing the Xiberlinc Attention &amp; Working Memory site and sharing your insights!</h1>
+        <p class="sub">Your feedback helps us continuously improve the experience. We truly appreciate your time and input.</p>
+        
+        <div class="thanks-actions">
+          <button class="restart">again</button>
+        </div>
+        
+        <footer class="made-in">Made with ❤️ in Tokyo, Japan</footer>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
