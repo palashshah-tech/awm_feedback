@@ -28,6 +28,11 @@ function show(index){
   const next = stages[index];
   if(!next) return;
 
+  // Update Progress Bar
+  const progress = (index / (stages.length - 1)) * 100;
+  const pb = document.getElementById('progressBar');
+  if(pb) pb.style.width = `${progress}%`;
+
   clearTimeout(transitionTimer);
 
   stages.forEach((stage, i)=>{
