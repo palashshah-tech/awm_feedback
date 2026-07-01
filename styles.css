@@ -172,7 +172,7 @@ body{
   max-width:480px; /* Align with 5 buttons: (80px * 5) + (20px * 4) */
   margin-top:12px;
 }
-.hint{color:rgba(255,255,255,.4);font-size:14px;line-height:1.2;margin:0;font-weight:400}
+.hint{color:rgba(255,255,255,.75);font-size:14px;line-height:1.2;margin:0;font-weight:400}
 .actions{clear:both;margin-top:48px;display:flex;gap:12px}
 .actions button{background:var(--button);color:var(--button-text);border:0;padding:14px 28px;border-radius:10px;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.5)}
 .actions button.prev{background:transparent;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.06)}

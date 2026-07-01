@@ -155,6 +155,34 @@ async function submitResponse(){
   textInputs.forEach(inp=>{
     payload[inp.dataset.key] = inp.value.trim();
   });
+  
+  // Calculate SUS Score
+  // Standard SUS calculation:
+  // Odd items (sus1, sus3, sus5, sus7, sus9): contribution is response - 1
+  // Even items (sus2, sus4, sus6, sus8, sus10): contribution is 5 - response
+  // Sum * 2.5
+  let totalScore = 0;
+  let complete = true;
+  for (let i = 1; i <= 10; i++) {
+    const val = payload[`sus${i}`];
+    if (val === null || val === undefined) {
+      complete = false;
+      break;
+    }
+    if (i % 2 !== 0) {
+      // Odd questions (1, 3, 5, 7, 9)
+      totalScore += (val - 1);
+    } else {
+      // Even questions (2, 4, 6, 8, 10)
+      totalScore += (5 - val);
+    }
+  }
+  if (complete) {
+    payload.susScore = totalScore * 2.5;
+  } else {
+    payload.susScore = null;
+  }
+
   payload.createdAt = serverTimestamp();
 
   try{
@@ -192,25 +220,21 @@ const translations = {
     lang: "日本語",
     questions: [
       "Please enter your full name.",
-      "How easy was it to understand the purpose of the Attention & Working Memory site?",
-      "How would you rate the interface and overall design of the site?",
-      "How smooth did the experience feel as you used the site?",
-      "How responsive did the site feel during your use?",
-      "How easy was the site to understand and navigate?",
-      "How useful or relevant did the experience feel to you?",
+      "I think that I would like to use this system frequently.",
+      "I found the system unnecessarily complex.",
+      "I thought the system was easy to use.",
+      "I think that I would need the support of a technical person to be able to use this system.",
+      "I found the various functions in this system were well integrated.",
+      "I thought there was too much inconsistency in this system.",
+      "I would imagine that most people would learn to use this system very quickly.",
+      "I found the system very cumbersome to use.",
+      "I felt very confident using the system.",
+      "I needed to learn a lot of things before I could get going with this system.",
       "Please share any additional comments or feedback."
     ],
     hints: {
-      veryDifficult: "Very difficult",
-      veryEasy: "Very easy",
-      poor: "Poor",
-      excellent: "Excellent",
-      veryRough: "Very rough",
-      verySmooth: "Very smooth",
-      verySlow: "Very slow",
-      veryResponsive: "Very responsive",
-      notUseful: "Not useful",
-      veryUseful: "Very useful"
+      stronglyDisagree: "Strongly disagree",
+      stronglyAgree: "Strongly agree"
     },
     intro: {
       h1: "Thank you for helping us test the Attention & Working Memory experience!",
@@ -232,25 +256,21 @@ const translations = {
     lang: "English",
     questions: [
       "フルネームを入力してください。",
-      "Attention & Working Memory サイトの目的を理解するのはどれくらい簡単でしたか？",
-      "サイトのインターフェースと全体的なデザインをどのように評価しますか？",
-      "サイトを使用している際、使い心地はどれくらいスムーズに感じましたか？",
-      "使用中、サイトのレスポンスはどれくらい速く感じましたか？",
-      "サイトの理解やナビゲーションはどれくらい簡単でしたか？",
-      "体験はあなたにとってどれくらい有用、または関連性があると感じましたか？",
+      "このシステムを頻繁に利用したいと思う。",
+      "このシステムは不必要に複雑になっていると感じた。",
+      "このシステムは使いやすいと感じた。",
+      "このシステムを使うために、技術的な専門家のサポートが必要になると思う。",
+      "このシステムのさまざまな機能が、うまく統合されていると感じた。",
+      "このシステムは一貫性に欠けていると感じた。",
+      "ほとんどの人が、このシステムの使い方を非常に素早く習得できると思う。",
+      "このシステムは非常に使いにくいと感じた。",
+      "このシステムを自信を持って使うことができた。",
+      "このシステムを使い始める前に、多くのことを学習する必要があった。",
       "その他のコメントやフィードバックがあれば共有してください。"
     ],
     hints: {
-      veryDifficult: "非常に難しい",
-      veryEasy: "非常に簡単",
-      poor: "悪い",
-      excellent: "素晴らしい",
-      veryRough: "非常に粗い",
-      verySmooth: "非常にスムーズ",
-      verySlow: "非常に遅い",
-      veryResponsive: "非常にレスポンスが良い",
-      notUseful: "役に立たない",
-      veryUseful: "非常に役に立つ"
+      stronglyDisagree: "全くそう思わない",
+      stronglyAgree: "非常にそう思う"
     },
     intro: {
       h1: "Attention & Working Memory の体験テストにご協力いただきありがとうございます！",
@@ -287,27 +307,21 @@ function updateLanguage() {
 
   // Update Hints
   const hintMap = {
-    "Very difficult": dict.hints.veryDifficult,
-    "Very easy": dict.hints.veryEasy,
-    "Poor": dict.hints.poor,
-    "Excellent": dict.hints.excellent,
-    "Very rough": dict.hints.veryRough,
-    "Very smooth": dict.hints.verySmooth,
-    "Very slow": dict.hints.verySlow,
-    "Very responsive": dict.hints.veryResponsive,
-    "Not useful": dict.hints.notUseful,
-    "Very useful": dict.hints.veryUseful,
-    // Reverse map for switching back
-    "非常に難しい": dict.hints.veryDifficult,
-    "非常に簡単": dict.hints.veryEasy,
-    "悪い": dict.hints.poor,
-    "素晴らしい": dict.hints.excellent,
-    "非常に粗い": dict.hints.veryRough,
-    "非常にスムーズ": dict.hints.verySmooth,
-    "非常に遅い": dict.hints.verySlow,
-    "非常にレスポンスが良い": dict.hints.veryResponsive,
-    "役に立たない": dict.hints.notUseful,
-    "非常に役に立つ": dict.hints.veryUseful
+    "Strongly disagree": dict.hints.stronglyDisagree,
+    "Strongly agree": dict.hints.stronglyAgree,
+    "全くそう思わない": dict.hints.stronglyDisagree,
+    "非常にそう思う": dict.hints.stronglyAgree,
+    // Keep old ones in case of DOM state reuse
+    "Very difficult": dict.hints.stronglyDisagree,
+    "Very easy": dict.hints.stronglyAgree,
+    "Poor": dict.hints.stronglyDisagree,
+    "Excellent": dict.hints.stronglyAgree,
+    "Very rough": dict.hints.stronglyDisagree,
+    "Very smooth": dict.hints.stronglyAgree,
+    "Very slow": dict.hints.stronglyDisagree,
+    "Very responsive": dict.hints.stronglyAgree,
+    "Not useful": dict.hints.stronglyDisagree,
+    "Very useful": dict.hints.stronglyAgree
   };
 
   document.querySelectorAll('.hint').forEach(el => {
