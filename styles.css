@@ -172,14 +172,15 @@ body{
   max-width:480px; /* Align with 5 buttons: (80px * 5) + (20px * 4) */
   margin-top:12px;
 }
-.hint{color:rgba(255,255,255,.75);font-size:14px;line-height:1.2;margin:0;font-weight:400}
+.hint{color:#FFFFFF;font-size:14px;line-height:1.2;margin:0;font-weight:400}
 .actions{clear:both;margin-top:48px;display:flex;gap:12px}
 .actions button{background:var(--button);color:var(--button-text);border:0;padding:14px 28px;border-radius:10px;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.5)}
-.actions button.prev{background:transparent;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.06)}
+.actions button.prev{background:transparent;color:#FFFFFF;border:1px solid rgba(255,255,255,.3)}
 .actions button{background:var(--button);color:var(--button-text);border:0;padding:14px 28px;border-radius:10px;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.5);transition:transform 140ms var(--easing), box-shadow 200ms var(--easing), filter 120ms var(--easing)}
 .actions button:hover{transform:translateY(-1px);filter:brightness(1.03)}
 .actions button:active{transform:scale(.98)}
-.actions button.prev{background:transparent;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.06)}
+.actions button.prev{background:transparent;color:#FFFFFF;border:1px solid rgba(255,255,255,.3)}
+.actions button.prev:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5)}
 .actions button.disabled{opacity:.36;pointer-events:none}
 textarea{width:100%;min-height:160px;padding:20px;border-radius:8px;border:1px solid rgba(255,255,255,.04);background:transparent;color:var(--text);font-size:18px;resize:vertical}
 .textarea, textarea{width:100%;min-height:160px;padding:20px;border-radius:8px;border:1px solid rgba(255,255,255,.04);background:transparent;color:var(--text);font-size:18px;resize:vertical;transition:border-color 200ms var(--easing), box-shadow 200ms var(--easing)}
