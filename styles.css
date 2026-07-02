@@ -157,6 +157,14 @@ body{
   display: block !important;
 }
 
+.question-subtext {
+  display: block;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 8px;
+  font-weight: 300;
+}
+
 .name-wrap{margin:18px 0}
 .options{display:flex;gap:20px;align-items:center;margin:18px 0;width:fit-content}
 .rating button{background:var(--card);color:var(--text);border-radius:12px;border:0;padding:22px 0;width:80px;font-size:20px;cursor:pointer;box-shadow:rgba(0,0,0,.6) 0 2px 0;transition:transform 160ms var(--easing), box-shadow 160ms var(--easing), background 160ms var(--easing), color 160ms var(--easing)}
@@ -233,6 +241,7 @@ textarea::placeholder {
     margin-top: 6px !important;
   }
   .question-text { font-size: 24px !important; }
+  .question-subtext { font-size: 13px; }
 
   .name-wrap input { font-size: 24px; }
   

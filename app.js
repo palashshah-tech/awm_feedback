@@ -209,7 +209,7 @@ ta && ta.addEventListener('keydown', e=>{
   }
 });
 
-// Translation Logic
+/// Translation Logic
 const translations = {
   en: {
     start: "start",
@@ -221,7 +221,7 @@ const translations = {
     questions: [
       "Please enter your full name.",
       "I think that I would like to use this system frequently.",
-      "I found the system unnecessarily complex.",
+      "I found the system unnecessarily complex. <span class=\"question-subtext\">(“Unnecessarily complex” means complexity beyond what is deemed necessary to achieve the system’s objectives)</span>",
       "I thought the system was easy to use.",
       "I think that I would need the support of a technical person to be able to use this system.",
       "I found the various functions in this system were well integrated.",
@@ -238,8 +238,8 @@ const translations = {
     },
     intro: {
       h1: "Thank you for helping us test the Attention & Working Memory experience!",
-      lead1: "Your feedback is valuable and helps us enhance our product and drive R&D improvements.",
-      lead2: "Please share your honest thoughts after exploring <a href=\"https://awmpublic.xiberlinc.one/\" target=\"_blank\" rel=\"noopener noreferrer\">https://awmpublic.xiberlinc.one/</a>."
+      lead1: "After exploring the system, please respond to the following questions immediately without thinking too deeply, before providing feedback or discussion. Please make sure to answer all items. If you find an item difficult to answer, please check the middle \"3\".",
+      lead2: "* Depending on the type of \"system\" used, it might be easier to understand if you replace \"system\" with \"product\", \"content\", etc. <br>Explore it here: <a href=\"https://awmpublic.xiberlinc.one/\" target=\"_blank\" rel=\"noopener noreferrer\">https://awmpublic.xiberlinc.one/</a>"
     },
     thanks: {
       h1: "Thank you for testing the Xiberlinc Attention & Working Memory site and sharing your insights!",
@@ -256,26 +256,26 @@ const translations = {
     lang: "English",
     questions: [
       "フルネームを入力してください。",
-      "このシステムを頻繁に利用したいと思う。",
-      "このシステムは不必要に複雑になっていると感じた。",
-      "このシステムは使いやすいと感じた。",
-      "このシステムを使うために、技術的な専門家のサポートが必要になると思う。",
-      "このシステムのさまざまな機能が、うまく統合されていると感じた。",
-      "このシステムは一貫性に欠けていると感じた。",
-      "ほとんどの人が、このシステムの使い方を非常に素早く習得できると思う。",
-      "このシステムは非常に使いにくいと感じた。",
-      "このシステムを自信を持って使うことができた。",
-      "このシステムを使い始める前に、多くのことを学習する必要があった。",
+      "この「システム」を頻繁に利用したいと思う",
+      "この「システム」は必要以上に複雑だと感じた<span class=\"question-subtext\">（「必要以上に複雑」とは、「このシステムの目的を達成するためにやむを得ないと思われる複雑さ以上に複雑」ということ）</span>",
+      "この「システム」は使いやすいと思った",
+      "私がこの「システム」を使えるようになるには、技術者のサポートが必要だと思う",
+      "この「システム」の様々な機能は、互いによく連携されていると感じた",
+      "この「システム」には一貫性がなさすぎると思った",
+      "ほとんどの人はこの「システム」をすぐに使いこなせるようになると思う",
+      "この「システム」はとても使いづらいと感じた",
+      "この「システム」を使う自信が持てた",
+      "私がこの「システム」を使う際には、多くのことを学ぶ必要があった",
       "その他のコメントやフィードバックがあれば共有してください。"
     ],
     hints: {
       stronglyDisagree: "全くそう思わない",
-      stronglyAgree: "非常にそう思う"
+      stronglyAgree: "強くそう思う"
     },
     intro: {
       h1: "Attention & Working Memory の体験テストにご協力いただきありがとうございます！",
-      lead1: "あなたのフィードバックは貴重であり、製品の強化や研究開発の改善に役立ちます。",
-      lead2: "<a href=\"https://awmpublic.xiberlinc.one/\" target=\"_blank\" rel=\"noopener noreferrer\">https://awmpublic.xiberlinc.one/</a> をご覧になった後、率直な感想をお聞かせください。"
+      lead1: "評価対象となる「システム」を利用した後、「システム」についてのフィードバックや議論を行う前に、以下の質問に回答してください。各項目について、深く考えずに即座に回答してください。必ずすべての項目に対して回答してください。回答しにくい項目がある場合には、中間の「3」にチェックを入れてください。",
+      lead2: "※ 利用した「システム」の種類によっては、「システム」でなく「製品」、「コンテンツ」などと読み替えてもらった方が分かりやすい可能性があります。<br>こちらから体験してください: <a href=\"https://awmpublic.xiberlinc.one/\" target=\"_blank\" rel=\"noopener noreferrer\">https://awmpublic.xiberlinc.one/</a>"
     },
     thanks: {
       h1: "Xiberlinc Attention & Working Memory サイトのテストと意見の共有、ありがとうございました！",
@@ -302,7 +302,7 @@ function updateLanguage() {
   // Update Questions
   const qElements = document.querySelectorAll('.question-text');
   qElements.forEach((el, i) => {
-    if (dict.questions[i]) el.textContent = dict.questions[i];
+    if (dict.questions[i]) el.innerHTML = dict.questions[i];
   });
 
   // Update Hints
@@ -311,6 +311,7 @@ function updateLanguage() {
     "Strongly agree": dict.hints.stronglyAgree,
     "全くそう思わない": dict.hints.stronglyDisagree,
     "非常にそう思う": dict.hints.stronglyAgree,
+    "強くそう思う": dict.hints.stronglyAgree,
     // Keep old ones in case of DOM state reuse
     "Very difficult": dict.hints.stronglyDisagree,
     "Very easy": dict.hints.stronglyAgree,
