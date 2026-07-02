@@ -221,7 +221,7 @@ const translations = {
     questions: [
       "Please enter your full name.",
       "I think that I would like to use this system frequently.",
-      "I found the system unnecessarily complex. <span class=\"question-subtext\">(“Unnecessarily complex” means complexity beyond what is deemed necessary to achieve the system’s objectives)</span>",
+      "I found the system unnecessarily complex. <span class=\"question-subtext\">(“Unnecessarily complex” means complexity beyond what is deemed unavoidable to achieve the objectives of this system)</span>",
       "I thought the system was easy to use.",
       "I think that I would need the support of a technical person to be able to use this system.",
       "I found the various functions in this system were well integrated.",
