@@ -220,16 +220,16 @@ const translations = {
     lang: "日本語",
     questions: [
       "Please enter your full name.",
-      "I think that I would like to use this system frequently.",
-      "I found the system unnecessarily complex. <span class=\"question-subtext\">(“Unnecessarily complex” means complexity beyond what is deemed unavoidable to achieve the objectives of this system)</span>",
-      "I thought the system was easy to use.",
-      "I think that I would need the support of a technical person to be able to use this system.",
-      "I found the various functions in this system were well integrated.",
-      "I thought there was too much inconsistency in this system.",
-      "I would imagine that most people would learn to use this system very quickly.",
-      "I found the system very cumbersome to use.",
-      "I felt very confident using the system.",
-      "I needed to learn a lot of things before I could get going with this system.",
+      "I think that I would like to use this \"system\" frequently.",
+      "I felt that this \"system\" was unnecessarily complex. <span class=\"question-subtext\">(“Unnecessarily complex” means complexity beyond what is deemed unavoidable to achieve the objectives of this system)</span>",
+      "I thought this \"system\" was easy to use.",
+      "I think that I would need the support of a technician for me to be able to use this \"system\".",
+      "I felt that the various functions of this \"system\" were well integrated with each other.",
+      "I thought that there was too much inconsistency in this \"system\".",
+      "I think that most people would learn to use this \"system\" very quickly.",
+      "I felt that this \"system\" was very difficult to use.",
+      "I was able to have confidence in using this \"system\".",
+      "I needed to learn many things when I used this \"system\".",
       "Please share any additional comments or feedback."
     ],
     hints: {
@@ -238,7 +238,7 @@ const translations = {
     },
     intro: {
       h1: "Thank you for helping us test the Attention & Working Memory experience!",
-      lead1: "After exploring the system, please respond to the following questions immediately without thinking too deeply, before providing feedback or discussion. Please make sure to answer all items. If you find an item difficult to answer, please check the middle \"3\".",
+      lead1: "After exploring the \"system\", please respond to the following questions immediately without thinking too deeply, before providing feedback or discussion. Please make sure to answer all items. If you find an item difficult to answer, please check the middle \"3\".",
       lead2: "* Depending on the type of \"system\" used, it might be easier to understand if you replace \"system\" with \"product\", \"content\", etc. <br>Explore it here: <a href=\"https://awmpublic.xiberlinc.one/\" target=\"_blank\" rel=\"noopener noreferrer\">https://awmpublic.xiberlinc.one/</a>"
     },
     thanks: {
