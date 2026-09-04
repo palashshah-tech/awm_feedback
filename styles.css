@@ -152,7 +152,7 @@ body{
 
 .question-text {
   font-size: 32px !important;
-  line-height: 1.2 !important;
+  line-height: 1.45 !important;
   color: #FFFFFF !important;
   display: block !important;
 }
@@ -160,9 +160,26 @@ body{
 .question-subtext {
   display: block;
   font-size: 16px;
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 8px;
   font-weight: 300;
+}
+
+/* Furigana (Ruby) Styling */
+ruby {
+  ruby-align: center;
+  ruby-position: over;
+}
+
+rt {
+  font-size: 0.48em;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  letter-spacing: 0;
+  user-select: none;
+  text-align: center;
 }
 
 .name-wrap{margin:18px 0}

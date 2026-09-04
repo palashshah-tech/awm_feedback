@@ -255,32 +255,32 @@ const translations = {
     again: "もう一度",
     lang: "English",
     questions: [
-      "フルネームを入力してください。",
-      "この「システム」を頻繁に利用したいと思う",
-      "この「システム」は必要以上に複雑だと感じた<span class=\"question-subtext\">（「必要以上に複雑」とは、「このシステムの目的を達成するためにやむを得ないと思われる複雑さ以上に複雑」ということ）</span>",
-      "この「システム」は使いやすいと思った",
-      "私がこの「システム」を使えるようになるには、技術者のサポートが必要だと思う",
-      "この「システム」の様々な機能は、互いによく連携されていると感じた",
-      "この「システム」には一貫性がなさすぎると思った",
-      "ほとんどの人はこの「システム」をすぐに使いこなせるようになると思う",
-      "この「システム」はとても使いづらいと感じた",
-      "この「システム」を使う自信が持てた",
-      "私がこの「システム」を使う際には、多くのことを学ぶ必要があった",
-      "その他のコメントやフィードバックがあれば共有してください。"
+      "フルネームを<ruby>入力<rt>にゅうりょく</rt></ruby>してください。",
+      "この「システム」を<ruby>頻繁<rt>ひんぱん</rt></ruby>に<ruby>利用<rt>りよう</rt></ruby>したいと<ruby>思<rt>おも</rt></ruby>う",
+      "この「システム」は<ruby>必要<rt>ひつよう</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>に<ruby>複雑<rt>ふくざつ</rt></ruby>だと<ruby>感<rt>かん</rt></ruby>じた<span class=\"question-subtext\">（「<ruby>必要<rt>ひつよう</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>に<ruby>複雑<rt>ふくざつ</rt></ruby>」とは、「このシステムの<ruby>目的<rt>もくてき</rt></ruby>を<ruby>達成<rt>たっせい</rt></ruby>するためにやむを<ruby>得<rt>え</rt></ruby>ないと<ruby>思<rt>おも</rt></ruby>われる<ruby>複雑<rt>ふくざつ</rt></ruby>さ<ruby>以上<rt>いじょう</rt></ruby>に<ruby>複雑<rt>ふくざつ</rt></ruby>」ということ）</span>",
+      "この「システム」は<ruby>使<rt>つか</rt></ruby>いやすいと<ruby>思<rt>おも</rt></ruby>った",
+      "<ruby>私<rt>わたし</rt></ruby>がこの「システム」を<ruby>使<rt>つか</rt></ruby>えるようになるには、<ruby>技術者<rt>ぎじゅつしゃ</rt></ruby>のサポートが<ruby>必要<rt>ひつよう</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>う",
+      "この「システム」の<ruby>様々<rt>さまざま</rt></ruby>な<ruby>機能<rt>きのう</rt></ruby>は、<ruby>互<rt>たが</rt></ruby>いによく<ruby>連携<rt>れんけい</rt></ruby>されていると<ruby>感<rt>かん</rt></ruby>じた",
+      "この「システム」には<ruby>一貫性<rt>いっかんせい</rt></ruby>がなさすぎると<ruby>思<rt>おも</rt></ruby>った",
+      "ほとんどの<ruby>人<rt>ひと</rt></ruby>はこの「システム」をすぐに<ruby>使<rt>つか</rt></ruby>いこなせるようになると<ruby>思<rt>おも</rt></ruby>う",
+      "この「システム」はとても<ruby>使<rt>つか</rt></ruby>いづらいと<ruby>感<rt>かん</rt></ruby>じた",
+      "この「システム」を<ruby>使<rt>つか</rt></ruby>う<ruby>自信<rt>じしん</rt></ruby>が<ruby>持<rt>も</rt></ruby>てた",
+      "<ruby>私<rt>わたし</rt></ruby>がこの「システム」を<ruby>使<rt>つか</rt></ruby>う<ruby>際<rt>さい</rt></ruby>には、<ruby>多<rt>おお</rt></ruby>くのことを<ruby>学<rt>まな</rt></ruby>ぶ<ruby>必要<rt>ひつよう</rt></ruby>があった",
+      "その<ruby>他<rt>ほか</rt></ruby>のコメントやフィードバックがあれば<ruby>共有<rt>きょうゆう</rt></ruby>してください。"
     ],
     hints: {
-      stronglyDisagree: "全くそう思わない",
-      stronglyAgree: "強くそう思う"
+      stronglyDisagree: "<ruby>全<rt>まった</rt></ruby>くそう<ruby>思<rt>おも</rt></ruby>わない",
+      stronglyAgree: "<ruby>強<rt>つよ</rt></ruby>くそう<ruby>思<rt>おも</rt></ruby>う"
     },
     intro: {
-      h1: "Attention & Working Memory の体験テストにご協力いただきありがとうございます！",
-      lead1: "評価対象となる「システム」を利用した後、「システム」についてのフィードバックや議論を行う前に、以下の質問に回答してください。各項目について、深く考えずに即座に回答してください。必ずすべての項目に対して回答してください。回答しにくい項目がある場合には、中間の「3」にチェックを入れてください。",
-      lead2: "※ 利用した「システム」の種類によっては、「システム」でなく「製品」、「コンテンツ」などと読み替えてもらった方が分かりやすい可能性があります。<br>こちらから体験してください: <a href=\"https://awmpublic.xiberlinc.one/\" target=\"_blank\" rel=\"noopener noreferrer\">https://awmpublic.xiberlinc.one/</a>"
+      h1: "Attention & Working Memory の<ruby>体験<rt>たいけん</rt></ruby>テストにご<ruby>協力<rt>きょうりょく</rt></ruby>いただきありがとうございます！",
+      lead1: "<ruby>評価<rt>ひょうか</rt></ruby><ruby>対象<rt>たいしょう</rt></ruby>となる「システム」を<ruby>利用<rt>りよう</rt></ruby>した<ruby>後<rt>あと</rt></ruby>、「システム」についてのフィードバックや<ruby>議論<rt>ぎろん</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う<ruby>前<rt>まえ</rt></ruby>に、<ruby>以下<rt>いか</rt></ruby>の<ruby>質問<rt>しつもん</rt></ruby>に<ruby>回答<rt>かいとう</rt></ruby>してください。<ruby>各<rt>かく</rt></ruby><ruby>項目<rt>こうもく</rt></ruby>について、<ruby>深<rt>ふか</rt></ruby>く<ruby>考<rt>かんが</rt></ruby>えずに<ruby>即座<rt>そくざ</rt></ruby>に<ruby>回答<rt>かいとう</rt></ruby>してください。<ruby>必<rt>かなら</rt></ruby>ずすべての<ruby>項目<rt>こうもく</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して<ruby>回答<rt>かいとう</rt></ruby>してください。<ruby>回答<rt>かいとう</rt></ruby>しにくい<ruby>項目<rt>こうもく</rt></ruby>がある<ruby>場合<rt>ばあい</rt></ruby>には、<ruby>中間<rt>ちゅうかん</rt></ruby>の「3」にチェックを<ruby>入<rt>い</rt></ruby>れてください。",
+      lead2: "※ <ruby>利用<rt>りよう</rt></ruby>した「システム」の<ruby>種類<rt>しゅるい</rt></ruby>によっては、「システム」でなく「<ruby>製品<rt>せいひん</rt></ruby>」、「コンテンツ」などと<ruby>読<rt>よ</rt></ruby>み<ruby>替<rt>か</rt></ruby>えてもらった<ruby>方<rt>ほう</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かりやすい<ruby>可能性<rt>かのうせい</rt></ruby>があります。<br>こちらから<ruby>体験<rt>たいけん</rt></ruby>してください: <a href=\"https://awmpublic.xiberlinc.one/\" target=\"_blank\" rel=\"noopener noreferrer\">https://awmpublic.xiberlinc.one/</a>"
     },
     thanks: {
-      h1: "Xiberlinc Attention & Working Memory サイトのテストと意見の共有、ありがとうございました！",
-      sub: "フィードバックは継続的な体験の改善に役立ちます。お時間とお力添えに心より感謝いたします。",
-      footer: "<strong>東京で ❤️ を込めて作られました</strong>"
+      h1: "Xiberlinc Attention & Working Memory サイトのテストと<ruby>意見<rt>いけん</rt></ruby>の<ruby>共有<rt>きょうゆう</rt></ruby>、ありがとうございました！",
+      sub: "フィードバックは<ruby>継続的<rt>けいぞくてき</rt></ruby>な<ruby>体験<rt>たいけん</rt></ruby>の<ruby>改善<rt>かいぜん</rt></ruby>に<ruby>役立<rt>やくだ</rt></ruby>ちます。お<ruby>時間<rt>じかん</rt></ruby>とお<ruby>力添<rt>ちからぞ</rt></ruby>えに<ruby>心<rt>こころ</rt></ruby>より<ruby>感謝<rt>かんしゃ</rt></ruby>いたします。",
+      footer: "<strong><ruby>東京<rt>とうきょう</rt></ruby>で ❤️ を<ruby>込<rt>こ</rt></ruby>めて<ruby>作<rt>つく</rt></ruby>られました</strong>"
     }
   }
 };
@@ -306,28 +306,11 @@ function updateLanguage() {
   });
 
   // Update Hints
-  const hintMap = {
-    "Strongly disagree": dict.hints.stronglyDisagree,
-    "Strongly agree": dict.hints.stronglyAgree,
-    "全くそう思わない": dict.hints.stronglyDisagree,
-    "非常にそう思う": dict.hints.stronglyAgree,
-    "強くそう思う": dict.hints.stronglyAgree,
-    // Keep old ones in case of DOM state reuse
-    "Very difficult": dict.hints.stronglyDisagree,
-    "Very easy": dict.hints.stronglyAgree,
-    "Poor": dict.hints.stronglyDisagree,
-    "Excellent": dict.hints.stronglyAgree,
-    "Very rough": dict.hints.stronglyDisagree,
-    "Very smooth": dict.hints.stronglyAgree,
-    "Very slow": dict.hints.stronglyDisagree,
-    "Very responsive": dict.hints.stronglyAgree,
-    "Not useful": dict.hints.stronglyDisagree,
-    "Very useful": dict.hints.stronglyAgree
-  };
-
-  document.querySelectorAll('.hint').forEach(el => {
-    const txt = el.textContent.trim();
-    if (hintMap[txt]) el.textContent = hintMap[txt];
+  document.querySelectorAll('.hint.left').forEach(el => {
+    el.innerHTML = dict.hints.stronglyDisagree;
+  });
+  document.querySelectorAll('.hint.right').forEach(el => {
+    el.innerHTML = dict.hints.stronglyAgree;
   });
 
   // Update Intro
