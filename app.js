@@ -197,6 +197,11 @@ async function submitResponse(){
     show(stages.length-1); // thanks
   }catch(err){
     console.error('submit error', err);
+    const submitBtn = document.querySelector('.submit');
+    if (submitBtn) {
+      submitBtn.classList.remove('disabled');
+      submitBtn.textContent = translations[currentLang].submit;
+    }
     alert('Failed to submit — check console for details.');
   }
 }
