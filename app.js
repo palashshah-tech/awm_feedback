@@ -225,16 +225,16 @@ const translations = {
     lang: "日本語",
     questions: [
       "Please enter your full name.",
-      "I would like to use this \"system\" a lot.",
-      "I felt that this \"system\" was very complex.",
-      "I thought this \"system\" was easy to use.",
-      "The instructions for this \"system\" were hard to follow (I needed someone's help).",
-      "I felt the various features and screens in this \"system\" worked well together.",
-      "I felt the controls or design in this \"system\" were inconsistent.",
-      "I think anyone could learn how to use this \"system\" very quickly.",
-      "I felt that this \"system\" was very awkward or difficult to use.",
-      "I was able to use this \"system\" with confidence.",
-      "I had to learn a lot of things before I could start using this \"system\".",
+      "I would like to use this \"system (test)\" a lot in the future.",
+      "I felt that this \"system (test)\" was very complex (difficult).",
+      "I thought this \"system (test)\" was easy to use.",
+      "I found the explanations for this \"system (test)\" hard to follow (difficult to understand).",
+      "I felt the layout of information and buttons on the screen was easy to understand.",
+      "I often got confused when figuring out how to operate this \"system (test)\".",
+      "I felt the screens in this \"system (test)\" were easy to see (view).",
+      "I felt that using this \"system (test)\" was tiring (made me tired).",
+      "I was able to use this \"system (test)\" with confidence.",
+      "I had to learn a lot of things before I could start the test.",
       "Please share any additional comments or feedback."
     ],
     hints: {
@@ -243,8 +243,8 @@ const translations = {
     },
     intro: {
       h1: "Thank you for helping us test the Attention & Working Memory experience!",
-      lead1: "After exploring the \"system\", please respond to the following questions immediately without thinking too deeply, before providing feedback or discussion. Please make sure to answer all items. If you find an item difficult to answer, please check the middle \"3\".",
-      lead2: "* Depending on the type of \"system\" used, it might be easier to understand if you replace \"system\" with \"product\", \"content\", etc. <br>Explore it here: <a href=\"https://awmpublic.xiberlinc.one/\" target=\"_blank\" rel=\"noopener noreferrer\">https://awmpublic.xiberlinc.one/</a>"
+      lead1: "After exploring the \"system (test)\", please respond to the following questions immediately without thinking too deeply, before providing feedback or discussion. Please make sure to answer all items. If you find an item difficult to answer, please check the middle \"3\".",
+      lead2: "Explore it here: <a href=\"https://awmpublic.xiberlinc.one/\" target=\"_blank\" rel=\"noopener noreferrer\">https://awmpublic.xiberlinc.one/</a>"
     },
     thanks: {
       h1: "Thank you for testing the Xiberlinc Attention & Working Memory site and sharing your insights!",
@@ -261,16 +261,16 @@ const translations = {
     lang: "English",
     questions: [
       "フルネームを<ruby>入力<rt>にゅうりょく</rt></ruby>してください。",
-      "この「システム」を<ruby>沢山<rt>たくさん</rt></ruby><ruby>使<rt>つか</rt></ruby>いたい（<ruby>利用<rt>りよう</rt></ruby>したい）と<ruby>思<rt>おも</rt></ruby>う",
-      "この「システム」はとても<ruby>複雑<rt>ふくざつ</rt></ruby>だと<ruby>感<rt>かん</rt></ruby>じた",
-      "この「システム」は<ruby>使<rt>つか</rt></ruby>いやすいと<ruby>思<rt>おも</rt></ruby>った",
-      "この「システム」の<ruby>説明<rt>せつめい</rt></ruby>はわかりにくかった（<ruby>使<rt>つか</rt></ruby>うのに<ruby>人<rt>ひと</rt></ruby>の<ruby>助<rt>たす</rt></ruby>けが<ruby>必要<rt>ひつよう</rt></ruby>だった）",
-      "この「システム」はいろんな<ruby>機能<rt>きのう</rt></ruby>や<ruby>画面<rt>がめん</rt></ruby>がうまくまとまっていると<ruby>感<rt>かん</rt></ruby>じた",
-      "この「システム」は<ruby>操作<rt>そうさ</rt></ruby>やデザインがちぐはぐ（バラバラ）だと<ruby>思<rt>おも</rt></ruby>った",
-      "この「システム」の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>は、だれでもすぐに<ruby>覚<rt>おぼ</rt></ruby>えられると<ruby>思<rt>おも</rt></ruby>う",
-      "この「システム」はとても<ruby>使<rt>つか</rt></ruby>いづらいと<ruby>感<rt>かん</rt></ruby>じた",
-      "この「システム」を<ruby>自信<rt>じしん</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>使<rt>つか</rt></ruby>うことができた",
-      "この「システム」を<ruby>使<rt>つか</rt></ruby>い<ruby>始<rt>はじ</rt></ruby>める<ruby>前<rt>まえ</rt></ruby>に、<ruby>覚<rt>おぼ</rt></ruby>えることがたくさんあった",
+      "この「システム（テスト）」を、<ruby>今後<rt>こんご</rt></ruby>もたくさん<ruby>使<rt>つか</rt></ruby>いたい（<ruby>利用<rt>りよう</rt></ruby>したい）と<ruby>思<rt>おも</rt></ruby>う",
+      "この「システム（テスト）」は、とても<ruby>複雑<rt>ふくざつ</rt></ruby>（<ruby>難<rt>むずか</rt></ruby>しい）だと<ruby>感<rt>かん</rt></ruby>じた",
+      "この「システム（テスト）」は、<ruby>使<rt>つか</rt></ruby>いやすいと<ruby>思<rt>おも</rt></ruby>った",
+      "この「システム（テスト）」の<ruby>説明<rt>せつめい</rt></ruby>は、わかりにくかった（<ruby>理解<rt>りかい</rt></ruby>するのが<ruby>難<rt>むずか</rt></ruby>しかった）",
+      "この「システム（テスト）」は、<ruby>画面上<rt>がめんじょう</rt></ruby>の<ruby>情報<rt>じょうほう</rt></ruby>やボタンの<ruby>配置<rt>はいち</rt></ruby>がわかりやすかった",
+      "この「システム（テスト）」の<ruby>操作方法<rt>そうさほうほう</rt></ruby>で、<ruby>迷<rt>まよ</rt></ruby>うことが<ruby>多<rt>おお</rt></ruby>かった",
+      "この「システム（テスト）」の<ruby>画面<rt>がめん</rt></ruby>は<ruby>見<rt>み</rt></ruby>やすかった",
+      "この「システム（テスト）」を<ruby>使<rt>つか</rt></ruby>うのは、<ruby>疲<rt>つか</rt></ruby>れる（<ruby>疲<rt>つか</rt></ruby>れたと<ruby>感<rt>かん</rt></ruby>じた）",
+      "この「システム（テスト）」を、<ruby>自信<rt>じしん</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>使<rt>つか</rt></ruby>うことができた",
+      "テストを<ruby>始<rt>はじ</rt></ruby>める<ruby>前<rt>まえ</rt></ruby>に、<ruby>覚<rt>おぼ</rt></ruby>えることがたくさんあった",
       "その<ruby>他<rt>ほか</rt></ruby>のコメントやフィードバックがあれば<ruby>共有<rt>きょうゆう</rt></ruby>してください。"
     ],
     hints: {
@@ -279,8 +279,8 @@ const translations = {
     },
     intro: {
       h1: "Attention & Working Memory の<ruby>体験<rt>たいけん</rt></ruby>テストにご<ruby>協力<rt>きょうりょく</rt></ruby>いただきありがとうございます！",
-      lead1: "<ruby>評価<rt>ひょうか</rt></ruby><ruby>対象<rt>たいしょう</rt></ruby>となる「システム」を<ruby>利用<rt>りよう</rt></ruby>した<ruby>後<rt>あと</rt></ruby>、「システム」についてのフィードバックや<ruby>議論<rt>ぎろん</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う<ruby>前<rt>まえ</rt></ruby>に、<ruby>以下<rt>いか</rt></ruby>の<ruby>質問<rt>しつもん</rt></ruby>に<ruby>回答<rt>かいとう</rt></ruby>してください。<ruby>各<rt>かく</rt></ruby><ruby>項目<rt>こうもく</rt></ruby>について、<ruby>深<rt>ふか</rt></ruby>く<ruby>考<rt>かんが</rt></ruby>えずに<ruby>即座<rt>そくざ</rt></ruby>に<ruby>回答<rt>かいとう</rt></ruby>してください。<ruby>必<rt>かなら</rt></ruby>ずすべての<ruby>項目<rt>こうもく</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して<ruby>回答<rt>かいとう</rt></ruby>してください。<ruby>回答<rt>かいとう</rt></ruby>しにくい<ruby>項目<rt>こうもく</rt></ruby>がある<ruby>場合<rt>ばあい</rt></ruby>には、<ruby>中間<rt>ちゅうかん</rt></ruby>の「3」にチェックを<ruby>入<rt>い</rt></ruby>れてください。",
-      lead2: "※ <ruby>利用<rt>りよう</rt></ruby>した「システム」の<ruby>種類<rt>しゅるい</rt></ruby>によっては、「システム」でなく「<ruby>製品<rt>せいひん</rt></ruby>」、「コンテンツ」などと<ruby>読<rt>よ</rt></ruby>み<ruby>替<rt>か</rt></ruby>えてもらった<ruby>方<rt>ほう</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かりやすい<ruby>可能性<rt>かのうせい</rt></ruby>があります。<br>こちらから<ruby>体験<rt>たいけん</rt></ruby>してください: <a href=\"https://awmpublic.xiberlinc.one/\" target=\"_blank\" rel=\"noopener noreferrer\">https://awmpublic.xiberlinc.one/</a>"
+      lead1: "<ruby>評価<rt>ひょうか</rt></ruby><ruby>対象<rt>たいしょう</rt></ruby>となる「システム（テスト）」を<ruby>利用<rt>りよう</rt></ruby>した<ruby>後<rt>あと</rt></ruby>、「システム（テスト）」についてのフィードバックや<ruby>議論<rt>ぎろん</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う<ruby>前<rt>まえ</rt></ruby>に、<ruby>以下<rt>いか</rt></ruby>の<ruby>質問<rt>しつもん</rt></ruby>に<ruby>回答<rt>かいとう</rt></ruby>してください。<ruby>各<rt>かく</rt></ruby><ruby>項目<rt>こうもく</rt></ruby>について、<ruby>深<rt>ふか</rt></ruby>く<ruby>考<rt>かんが</rt></ruby>えずに<ruby>即座<rt>そくざ</rt></ruby>に<ruby>回答<rt>かいとう</rt></ruby>してください。<ruby>必<rt>かなら</rt></ruby>ずすべての<ruby>項目<rt>こうもく</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して<ruby>回答<rt>かいとう</rt></ruby>してください。<ruby>回答<rt>かいとう</rt></ruby>しにくい<ruby>項目<rt>こうもく</rt></ruby>がある<ruby>場合<rt>ばあい</rt></ruby>には、<ruby>中間<rt>ちゅうかん</rt></ruby>の「3」にチェックを<ruby>入<rt>い</rt></ruby>れてください。",
+      lead2: "こちらから<ruby>体験<rt>たいけん</rt></ruby>してください: <a href=\"https://awmpublic.xiberlinc.one/\" target=\"_blank\" rel=\"noopener noreferrer\">https://awmpublic.xiberlinc.one/</a>"
     },
     thanks: {
       h1: "Xiberlinc Attention & Working Memory サイトのテストと<ruby>意見<rt>いけん</rt></ruby>の<ruby>共有<rt>きょうゆう</rt></ruby>、ありがとうございました！",
